@@ -1,0 +1,6 @@
+[database]
+# TYPE of application database
+db = "postgres"
+# DATA SOURCE NAME of application database
+#dsn = "app:pass@db:5432/app?sslmode=disable"
+dsn = "host=localhost port=5432 user=app password=pass dbname=app sslmode=disable"
