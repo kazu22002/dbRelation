@@ -88,7 +88,7 @@ func WriteOnFile(fileName string, data interface{}) error {
 		return err
 	}
 	// []byte をファイルに上書きしています。
-	err = ioutil.WriteFile(fileName, buf, os.ModeExclusive)
+	err = ioutil.WriteFile(fileName, buf, 0644)
 	if err != nil {
 		return err
 	}
